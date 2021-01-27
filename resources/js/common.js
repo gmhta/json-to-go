@@ -44,8 +44,8 @@ $(function()
 		else
 		{
 			var finalOutput = output.go;
-			if (typeof gofmt === 'function')
-				finalOutput = gofmt(output.go);
+			// if (typeof gofmt === 'function')
+			// 	finalOutput = gofmt(output.go);
 			var coloredOutput = hljs.highlight("go", finalOutput);
 			$('#output').html(coloredOutput.value);
 		}
