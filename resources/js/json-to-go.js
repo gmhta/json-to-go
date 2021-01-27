@@ -189,7 +189,7 @@ function jsonToGo(json, typename, flatten = true)
 			for (let i in keys)
 			{
 				const keyname = getOriginalName(keys[i]);
-				// indenter(innerTabs)
+				indenter(innerTabs)
 				const typename = format(keyname)
 				appender(typename+" ");
 				parent = typename
